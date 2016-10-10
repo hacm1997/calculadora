@@ -10,6 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.labsoftware.parcial.MainActivity">
 
+    <!-- text view para espaciar -->
     <TextView
         android:layout_width="wrap_content"
         android:id="@+id/textView"
@@ -17,15 +18,18 @@
         android:layout_alignParentEnd="true"
         android:layout_height="150dp" />
 
+    <!-- text view donde se mostrarán las operaciones -->
     <TextView
         android:text="0"
         android:layout_width="match_parent"
         android:layout_below="@+id/textView"
         android:id="@+id/texto"
+        android:gravity="right"
         android:layout_alignParentStart="true"
         android:layout_height="50dp"
         android:textSize="40sp" />
 
+    <!-- boton num.6 -->
     <Button
         android:text="6"
         android:layout_height="wrap_content"
@@ -34,6 +38,7 @@
         android:layout_alignParentStart="true"
         android:layout_width="wrap_content" />
 
+    <!-- boton num.5 -->
     <Button
         android:text="5"
         android:layout_height="wrap_content"
@@ -42,6 +47,7 @@
         android:id="@+id/button6"
         android:layout_width="wrap_content" />
 
+    <!-- boton num.2 -->
     <Button
         android:text="2"
         android:layout_height="wrap_content"
@@ -50,6 +56,7 @@
         android:id="@+id/button7"
         android:layout_width="wrap_content" />
 
+    <!-- boton num.4 -->
     <Button
         android:text="4"
         android:layout_height="wrap_content"
@@ -58,6 +65,7 @@
         android:layout_alignStart="@+id/button9"
         android:layout_width="wrap_content" />
 
+    <!-- boton num.1 -->
     <Button
         android:text="1"
         android:layout_width="wrap_content"
@@ -66,6 +74,7 @@
         android:layout_alignStart="@+id/button11"
         android:id="@+id/button12" />
 
+    <!-- boton num.3 -->
     <Button
         android:text="3"
         android:layout_height="wrap_content"
@@ -75,6 +84,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="11dp" />
 
+    <!-- boton num.0 -->
     <Button
         android:text="0"
         android:layout_height="wrap_content"
@@ -84,6 +94,7 @@
         android:layout_below="@+id/button3"
         android:layout_alignParentStart="true" />
 
+    <!-- boton num.8 -->
     <Button
         android:text="8"
         android:layout_height="wrap_content"
@@ -93,6 +104,7 @@
         android:layout_toEndOf="@+id/button"
         android:layout_margin="5dp" />
 
+    <!-- boton num.9 -->
     <Button
         android:text="9"
         android:id="@+id/button"
@@ -102,6 +114,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="5dp" />
 
+    <!-- boton de resta -->
     <Button
         android:text="-"
         android:layout_width="wrap_content"
@@ -110,6 +123,7 @@
         android:layout_alignTop="@+id/button12"
         android:layout_alignStart="@+id/button23" />
 
+    <!-- boton de dividir -->
     <Button
         android:text="÷"
         android:layout_height="wrap_content"
@@ -118,6 +132,7 @@
         android:layout_alignBottom="@+id/button9"
         android:layout_width="wrap_content" />
 
+    <!-- boton num.7 -->
     <Button
         android:text="7"
         android:layout_width="wrap_content"
@@ -127,6 +142,7 @@
         android:layout_alignBottom="@+id/button5"
         android:layout_toEndOf="@+id/button5" />
 
+    <!-- boton de resultado -->
     <Button
         android:text="="
         android:layout_height="wrap_content"
@@ -136,6 +152,7 @@
         android:layout_alignBottom="@+id/button4"
         android:layout_alignStart="@+id/button7" />
 
+    <!-- boton de suma -->
     <Button
         android:text="+"
         android:layout_width="wrap_content"
@@ -145,6 +162,7 @@
         android:layout_alignBottom="@+id/button13"
         android:layout_alignStart="@+id/button24" />
 
+    <!-- boton porcentaje o punto -->
     <Button
         android:text="%/."
         android:layout_width="wrap_content"
@@ -154,6 +172,7 @@
         android:layout_alignBottom="@+id/button8"
         android:layout_toEndOf="@+id/button5" />
 
+    <!-- boton multiplicación -->
     <Button
         android:text="x"
         android:layout_width="wrap_content"
@@ -163,6 +182,7 @@
         android:layout_alignBottom="@+id/button11"
         android:layout_alignParentEnd="true" />
 
+    <!-- boton de borrar -->
     <Button
         android:text="Del"
         android:layout_width="wrap_content"

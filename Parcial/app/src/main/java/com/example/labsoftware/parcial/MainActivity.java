@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //llamada a los botones de la acivity.main.xml
         Button boton0 = (Button)findViewById(R.id.button4);
         boton0.setOnClickListener(this);
         Button botonigu = (Button)findViewById(R.id.button8);
@@ -55,13 +56,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
+        //Captura de los datos (botones) y mostrar en el TextView
         TextView pant = (TextView)findViewById(R.id.texto);
         int select = v.getId();
+        //para añadir numeros y que no se sustituyan
         String h = pant.getText().toString();
 
+        //se hace un try-catch por si hay algun error
         try {
             switch (select) {
-
+                //se establecen las funciones de cada boton
                 case R.id.button4:
                     pant.setText(h+"0");
                     break;

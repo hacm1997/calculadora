@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    boolean decimal = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boton7.setOnClickListener(this);
         Button botondiv = (Button)findViewById(R.id.button22);
         botondiv.setOnClickListener(this);
+        Button botonborrar = (Button)findViewById(R.id.button10);
+        botonborrar.setOnClickListener(this);
 
     }
 
@@ -53,43 +57,53 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         TextView pant = (TextView)findViewById(R.id.texto);
         int select = v.getId();
+        String h = pant.getText().toString();
 
-        switch (select){
+        try {
+            switch (select) {
 
-            case R.id.button4:
-                pant.setText("0");
-                break;
-            case R.id.button3:
-                pant.setText("3");
-                break;
-            case R.id.button7:
-                pant.setText("2");
-                break;
-            case R.id.button12:
-                pant.setText("1");
-                break;
-            case R.id.button2:
-                pant.setText("6");
-                break;
-            case R.id.button6:
-                pant.setText("5");
-                break;
-            case R.id.button11:
-                pant.setText("4");
-                break;
-            case R.id.button:
-                pant.setText("9");
-                break;
-            case R.id.button5:
-                pant.setText("8");
-                break;
-            case R.id.button9:
-                pant.setText("7");
-                break;
-            case R.id.button13:
-                pant.setText(".");
-                break;
+                case R.id.button4:
+                    pant.setText(h+"0");
+                    break;
+                case R.id.button3:
+                    pant.setText(h+"3");
+                    break;
+                case R.id.button7:
+                    pant.setText(h+"2");
+                    break;
+                case R.id.button12:
+                    pant.setText(h+"1");
+                    break;
+                case R.id.button2:
+                    pant.setText(h+"6");
+                    break;
+                case R.id.button6:
+                    pant.setText(h+"5");
+                    break;
+                case R.id.button11:
+                    pant.setText(h+"4");
+                    break;
+                case R.id.button:
+                    pant.setText(h+"9");
+                    break;
+                case R.id.button5:
+                    pant.setText(h+"8");
+                    break;
+                case R.id.button9:
+                    pant.setText(h+"7");
+                    break;
+                case R.id.button13:
+                    if(decimal == false) {
+                        pant.setText(h + ".");
+                        decimal = true;
+                    }else{return;}
+                    break;
+                case R.id.button10:
+                    pant.setText("0");
 
+            }
+        }catch (Exception e){
+            pant.setText("error");
         }
 
     }
